@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <h2>Dashboard Menu</h2>
+    <a href="#">Overview</a>
+    <a href="sales.html">Sales Data</a>
+    <a href="orders.html">Orders</a>
+    <a href="#">Customers</a>
+    <a href="#">Inventory</a>
+    <a href="login.html">login</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <header>
+      <button class="open-btn" onclick="toggleSidebar()">☰</button>
+      <h1 style="font-size: xx-large;"> Nivi's Giftzz Dashboard </h1>
+        
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Total Sales</h2>
+        <p id="sales">₹14000</p>
+      </div>
+      <div class="card">
+        <h2>Total Orders</h2>
+        <p id="orders">54</p>
+      </div>
+      <div class="card">
+        <h2>New Customers</h2>
+        <p id="customers">13</p>
+      </div>
+      <div class="card">
+        <h2>Inventory</h2>
+        <p id="inventory">40</p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-container">
+        <h3>Sales Performance</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Customer Growth</h3>
+        <canvas id="customerChart"></canvas>
+      </div>
+    </section>
+  </div>
+   <!--footer-->
+   <div class="footer">
+    <div class="footer-logo">
+        <img src="logo.jpg" alt="Handmade Gift Shop Logo">
+        
+    </div>
+    <div class="footer-links">
+        <ul>
+            <h4>Quick Links</h4>
+        <p class="footer-links"><a href="index.html">Home</a></p>
+        <p class="footer-links"><a href="script.html">Collections</a></p>
+        <p class="footer-links"><a href="contact.html">Contact</a></p>
+        </ul>
+    </div>
+    <div class="customer-reviews">
+        <h4 class="review-link"><a href="">Customer Reviews</a></h4>
+        
+    </div>
+    
+    <div class="footer-social-media">
+        <h4>Connect With Us</h4>
+        <i class="fa-brands fa-instagram" style="color:white;"></i>
+         <i class="fa-brands fa-whatsapp"  style="color:white;"></i>
+         <i class="fa-brands fa-pinterest" style="color:white;"></i>
+    </div>
+    <div class="footer-legal">
+        <p>&copy; 2024 Handmade Gift Shop. All rights reserved.</p>
+        <p>Terms & Conditions | Privacy Policy</p>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
